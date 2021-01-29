@@ -31,6 +31,7 @@ class PostPage extends StatelessWidget {
         if (state is PostLoadedState) {
           return Container(
               child: ListView.builder(
+
             itemCount: state.loadedPost.length,
             itemBuilder: (context, index) => Container(
                 color: index % 2 == 0 ? Colors.green[350] : Colors.blue[50],
